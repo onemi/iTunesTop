@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDataDelegate> {
+    NSMutableData *webData;
+    NSURLConnection *connection;
+    NSMutableArray *array; 
+}
 
 @end
